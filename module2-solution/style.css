@@ -1,0 +1,120 @@
+/********** Document layout styles **********/
+/* Override the user-agent stylesheet */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Remove the default margin padding of browser*/
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/* Title */
+h1 {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px;
+}
+
+/* Section block (different type of food) */
+section {
+  position: relative;
+  /* Margin will cause the last block to move to next line but padding will not
+  because content size only concern about the padding + content + border*/
+  padding: 15px;
+  width: 100%;
+}
+
+/* div block (insert content into section block) */
+div {
+  position: relative;
+  /* #A9A9A9 == Dark Gray */
+  background-color: #A9A9A9;
+  border: 2px solid black;
+  width: 100%;
+}
+
+/* Paragraph block */
+p {
+  position: relative;
+  clear: right;
+  padding: 5px;
+  overflow: auto;
+}
+
+/* Type of food */
+#chicken {
+  width: 100px;
+  float: right;
+  text-align: center;
+  font-size: 20px;
+  /* #F08080 == Light Coral */
+  background-color: #F08080;
+  border: 2px solid black;
+}
+
+#beef {
+  width: 100px;
+  float: right;
+  text-align: center;
+  font-size: 20px;
+  /* #CD5C5C == Indian Red */
+  background-color: #CD5C5C;
+  color: white;
+  border: 2px solid black;
+}
+
+#sushi {
+  width: 100px;
+  float: right;
+  text-align: center;
+  font-size: 20px;
+  /* #FFFACD == Lemon Chiffon */
+  background-color: #FFFACD;
+  border: 2px solid black;
+}
+
+/* Define paragraph with no overflow */
+.description {
+  margin: auto;
+  width: auto;
+  height: auto;
+  }
+
+/* Simple Responsive Framework. */
+/********** Desktop version only: 3 (4 vertical grid) columns maximum **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    width: 33.33%;
+  }
+}
+
+/********** Tablet version only: 2 (6 vertical grid) and 1 (12 vertical grid) columns **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+    /* The margin auto means the margin is set automatically based on the container. If
+    the element is block type element, then it set the left and right margin to be same, so
+    the element is centered. */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/********** Mobile devices only: 2 (6 vertical grid) and 1 (12 vertical grid) columns **********/
+@media (max-width: 767px) {
+  .col-sm-12 {
+    float: left;
+    width: 100%;
+  } 
+}
