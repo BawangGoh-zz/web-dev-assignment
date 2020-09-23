@@ -16,5 +16,6 @@ Description link: https://github.com/BawangGoh/web-dev-assignment/blob/master/as
 Solution link   : https://bawanggoh.github.io/
 
 ## Week 3: Coding Assignment 
-In Progress
+Description link: https://github.com/BawangGoh/web-dev-assignment/blob/master/assignment3/Assignment-3.md
 
+Solution link   : https://bawanggoh.github.io/
